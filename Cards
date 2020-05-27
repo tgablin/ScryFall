@@ -1,0 +1,12 @@
+import sys
+import json
+import http
+
+url = 'https://api.scryfall.com/cards'
+pull = requests.get(url)
+
+def cardPull(url, pull):
+  if pull == 200:
+    print(pull)
+  else:
+    print("Unable to reach ScryFall")
